@@ -1,0 +1,24 @@
+#desktop-nav ul > li {
+  @apply flex cursor-pointer items-center px-3 transition duration-500 ease-out hover:bg-red-500;
+}
+
+#mobile-nav ul > li {
+  @apply flex cursor-pointer items-center transition duration-500 ease-out hover:bg-red-500;
+}
+
+#sidebar-button {
+  @apply ml-5 mt-4 flex h-7 w-8 cursor-pointer items-center;
+}
+
+#sidebar-button::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  box-shadow: 0px 10px 0px 0px white, 0px -10px 0px 0px white;
+}
+
+.hidden-content {
+  transform: translateX(-80vw);
+}
