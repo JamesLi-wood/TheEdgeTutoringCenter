@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  #footer {
+    @apply flex-col;
+  }
+
+  #footer > nav {
+    @apply relative w-full pb-4;
+  }
+}
