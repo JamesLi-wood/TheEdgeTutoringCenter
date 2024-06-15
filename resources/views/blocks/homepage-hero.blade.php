@@ -49,7 +49,6 @@
 
     .hero > p {
       text-align: initial;
-      width: 100%;
     }
   }
 </style>
