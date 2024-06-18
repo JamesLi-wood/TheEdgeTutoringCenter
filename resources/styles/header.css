@@ -12,11 +12,15 @@
   }
 
   #nav {
-    @apply flex w-4/5 flex-col items-center bg-blue-800;
+    @apply flex w-4/5 flex-col items-center overflow-y-scroll bg-blue-800;
   }
 
   #nav > ul {
-    @apply mt-7 flex w-4/5 flex-col gap-4 border border-l-0 border-r-0 border-white py-5;
+    @apply my-10 flex w-4/5 flex-col flex-nowrap  gap-4 border border-l-0 border-r-0 border-white py-5;
+  }
+
+  #nav > ul > li {
+    @apply px-0 py-2;
   }
 
   #sidebar-button {
@@ -34,5 +38,9 @@
 
   .hidden-content {
     transform: translateX(-80vw);
+  }
+
+  .disable-scroll {
+    overflow: hidden;
   }
 }

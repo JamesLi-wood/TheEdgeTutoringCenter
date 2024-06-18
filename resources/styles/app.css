@@ -7,3 +7,13 @@
 * {
   @apply text-white;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
