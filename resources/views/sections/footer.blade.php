@@ -3,7 +3,7 @@
   $image = wp_get_attachment_image_src(343);
 @endphp
 
-<footer id="footer" class="items-center bg-blue-500 px-16 py-4 border">
+<footer id="footer" class="items-center bg-blue-500 px-16 py-4">
   <a href="{{ home_url('/homepage') }}">
     <img src={{ $image[0] }} alt="Company Logo" class="a h-32 object-contain" />
   </a>
