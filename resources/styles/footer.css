@@ -1,9 +1,30 @@
+#footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "a b c";
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
 @media (max-width: 600px) {
   #footer {
-    @apply flex-col;
+    grid-template-columns: initial;
+    grid-template-areas:
+      "b b b b"
+      "a a c c";
   }
 
-  #footer > nav {
-    @apply relative w-full pb-4;
+  .b {
+    @apply m-0 mb-6;
   }
 }
