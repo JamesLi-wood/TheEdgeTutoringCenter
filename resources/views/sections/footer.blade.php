@@ -5,7 +5,7 @@
 
 <footer id="footer" class="items-center bg-blue-500 px-16 py-4 border">
   <a href="{{ home_url('/homepage') }}">
-    <img src={{ $image[0] }} alt="Company Logo" class="a h-32 border object-contain" />
+    <img src={{ $image[0] }} alt="Company Logo" class="a h-32 object-contain" />
   </a>
   
   @if (has_nav_menu('primary_navigation'))
