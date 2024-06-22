@@ -19,12 +19,10 @@
 <style>
   .parallax {
     background-image : url({{ $image['url'] }});
-    height: 30rem;
-    width: 100%;
-    position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 30rem;
   }
 </style>
