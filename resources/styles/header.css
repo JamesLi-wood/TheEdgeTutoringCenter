@@ -1,4 +1,4 @@
-#nav > ul > li {
+#nav > ul > li > a{
   @apply cursor-pointer px-3 py-5 transition duration-500 ease-out hover:bg-red-500;
 }
 
