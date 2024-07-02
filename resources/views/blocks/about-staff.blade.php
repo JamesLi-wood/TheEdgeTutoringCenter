@@ -44,6 +44,30 @@
     aspect-ratio: 1 / 1;
   }
 
+  .slick-arrow {
+    background-color: red !important;
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .slick-prev {
+    margin-left: -30px;
+    border-radius: 15px 25px 15px 25px;
+  }
+
+  .slick-prev::before {
+    content: "🡨";
+  }
+
+  .slick-next {
+    margin-right: -30px;
+    border-radius: 25px 15px 25px 15px;
+  }
+
+  .slick-next::before {
+    content: "🡪";
+  }
+
   @media (max-width: 800px) {
     .carousel {
       width: 100%;
@@ -63,6 +87,10 @@
 
     .carousel-contents > div > p {
       text-align: center;
+    }
+
+    .slick-arrow {
+      display: none !important;
     }
   }
 </style>
