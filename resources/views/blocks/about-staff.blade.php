@@ -15,13 +15,13 @@
 <blockquote data-{{ $block['id'] }}>
   <div class="carousel m-auto my-8 w-4/5 bg-blue-500 p-5">
     @foreach ($staff as $item)
-      <div class="carousel-contents flex flex-row">
-        <img src={{ $item["picture"]["url"] }} alt="Staff Image" class="mr-5">
+      <div class="carousel-contents">
+        <img src={{ $item["picture"]["url"] }} alt="Staff Image" class="mr-5 self-start object-contain">
         
         <div>
-          <p>{{ $item["description"] }}</p>
+          <p class="clamp">{{ $item["description"] }}</p>
 
-          <p class="mt-4">
+          <p class="clamp mt-4">
             <span class="border-b">Skills</span><br>
             @foreach ($item["skills"] as $skill)
               {{ $skill["subject"] }}
@@ -36,18 +36,18 @@
 <style>
   .carousel-contents {
     display: flex !important;
+    flex-direction: row;
   }
   
   .carousel-contents > img {
     width: 30%;
-    object-fit: contain;
     aspect-ratio: 1 / 1;
   }
 
   .slick-arrow {
     background-color: red !important;
-    height: 40px !important;
-    width: 40px !important;
+    height: 40px;
+    width: 40px;
   }
 
   .slick-prev {
