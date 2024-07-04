@@ -12,6 +12,10 @@
   grid-area: b;
 }
 
+.b > ul > li {
+  @apply underline-offset-4 hover:underline;
+}
+
 .c {
   grid-area: c;
 }
