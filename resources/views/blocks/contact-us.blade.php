@@ -12,7 +12,6 @@
   $location = get_field("location");
   $email = get_field("email");
   $number = get_field("number");
-  $background_image = get_field("image");
 @endphp
 
 <blockquote data-{{ $block['id'] }}>
