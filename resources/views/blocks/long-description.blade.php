@@ -13,7 +13,7 @@
 @endphp
 
 <blockquote data-{{ $block['id'] }}>
-  <div class="flex flex-col bg-blue-500 p-2">
+  <div class="flex flex-col bg-blue-500 p-6">
     <div class="flex justify-between">
       @for ($i = 0; $i <= 1; $i++)
         @if (isset($descriptions[$i]))
