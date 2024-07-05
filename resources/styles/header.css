@@ -12,7 +12,7 @@
   }
 
   #sidebar-contents {
-    @apply absolute bottom-0 left-0 right-0 top-0 z-10 mt-10 flex flex-row transition-transform duration-500;
+    @apply absolute bottom-0 left-0 right-0 top-0 z-10 flex flex-row transition-transform duration-500;
   }
 
   #nav {
@@ -20,7 +20,7 @@
   }
 
   #nav > ul {
-    @apply my-10 flex w-4/5 flex-col flex-nowrap  gap-4 border border-l-0 border-r-0 border-white py-5;
+    @apply my-10 flex w-4/5 flex-col flex-nowrap gap-4 border border-l-0 border-r-0 border-white py-5;
   }
 
   #nav > ul > li {
